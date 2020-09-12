@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #558b2f;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header .title {
+    position: relative;
+    top: -20px;
+    font-family: 'Homemade Apple';
+}
+
+header .icons {
+    margin-top: 20px;
+}
+
+header .icons ion-icon {
+    color: white;
+}
+
+header .icons a {
+    margin: 20px;
+}
+
+header .icons a:hover {
+    text-decoration: none;
+}
+
+header img {
+  position: absolute;
+  min-height: 100%;
+  max-width: 100%;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.25;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+main {
+    min-height: 100vh;
+    padding: 50px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+main .title {
+    text-align: center;
+    font-family: 'Cutive Mono';
+    margin: 40px 0 20px 0;
+}
+
+main .subtitle {
+    text-align: center;
+}
+
+.row {
+    margin: 30px 0;
+}
+
+.card {
+    background-color: whitesmoke;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+.portfolio-img {
+    height: 300px;
+}
+
+.connect-list {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+.connect-list li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
